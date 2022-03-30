@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SandwichBuilder</title>
+    <style>
+
+        body {
+            min-width: 500px;
+            text-align: center;
+            background-image: url(photo/background.jpg );
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        .header {
+            text-align: center;
+            margin-right: 10px;
+        }
+        section
+        {
+            overflow:hidden;
+            padding-left:150px;
+            padding-right:200px;
+        }
+        .culomn {
+            float:left;
+        }
+        #center {
+            width: 100%;
+        }
+        label {
+            font-size: x-large;
+        }
+        .checkbox
+        {
+            zoom:1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome To the Sandwich shop</h1>
+        Welcome to Sandwich shop, please follow the steps build sandwich
+    </div>
+    <section>
+        <form method="post" action="WebForm1.aspx">
+            <div id="#center" class="..culomn">
+                <br>
+                <br>
+                <label for="Toasted">Toasted：  </label>
+                <select name="Toasted" style="font-size:x-large">
+                    <option value="Toasted"> Toasted! </option>
+                    <option value="Not Toasted"> Not Toasted </option>
+                </select>
+                <br>
+                <br>
+                <label for="Size">Select the bread size first :</label>
+                <select name="Size" style="font-size:x-large">
+                    <option value=" Regular"> Regular  $5</option>
+                    <option value="Footlong"> Footlong  $5</option>
+                    <option value="Footlong Pro"> Footlong Pro  $5</option>
+                </select>
+                <br>
+                <br>
+                <label for="Meal">You want Meal?</label>
+                <select class="form-select form-select-sm" aria-lable=".form-select-sm example" name="Meal" style="zoom:1.5;">
+                    <option selected>open this select menu</option>
+                    <option value="Meal"> Meal</option>
+                    <option value="Sandwich only"> Only Sandwich</option>
+                </select>
+
+                <label style="font-size:large">(*Meal comes with，drink and Fries)</label>
+                <br>
+                <br>
+
+                <!--Source From Bootstrap-->
+                <label>Select Drink for your meal!</label>
+                <div class=" form-check">
+                    <input class="form-check-input" type="radio" id="radio1" name="drink" value="Coke">
+                    <label class="form-check-label" for="radio1">
+                        Coke
+                    </label>
+                </div>
+                <!--Source From Bootstrap-->
+                <div class=" form-check">
+                    <input class="form-check-input" type="radio" id="radio2" name="drink" value="Sprite">
+                    <label class="form-check-label" for="radio2">
+                        Sprite
+                    </label>
+                </div>
+                <!--Source From Bootstrap-->
+
+                <br>
+                <br>
+                <label>Veggies</label><br />
+                <br>
+                <input type="checkbox" id="checkbox1" class="checkbox" name="Fillings" value="Lettuce" /> Lettuce
+                <input type="checkbox" id="checkbox2" class="checkbox" name="Fillings" value="Tomatoes" /> Tomatoes
+                <input type="checkbox" id="checkbox3" class="checkbox" name="Fillings" value="Mayo" /> Mayo
+                <input type="checkbox" id="checkbox4" class="checkbox" name="Fillings" value="Pickles" /> Pickles
+                <input type="checkbox" id="checkbox5" class="checkbox" name="Fillings" value="GreenPeppers" /> Green Peppers
+                <br>
+                <br>
+                <label>Premium Add on</label><br />
+                <br>
+                <input type="checkbox" id="checkbox6" class="checkbox" name="Addon" value="Sausage" /> Sausage + $1
+                <input type="checkbox" id="checkbox7" class="checkbox" name="Addon" value="Egg" /> Egg + $0.89
+                <input type="checkbox" id="checkbox8" class="checkbox" name="Addon" value="Tuna" /> Tuna + $1.5
+                <input type="checkbox" id="checkbox9" class="checkbox" name="Addon" value="Chicken" /> Chicken + $1.5
+                <input type="checkbox" id="checkbox10" class="checkbox" name="Addon" value="Steak" /> Steak + $1.5
+                <br>
+                <br>
+                <label>Please Enter Your First Name:</label>
+
+                <!--Source From Bootstrap-->
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="corm-control" placeholder="First name" name="FirstName" aria-lable="First name" />
+                    </div>
+                </div>
+                <br />
+                <!--Source From Bootstrap-->
+                <label>Please Enter Your Last Name:</label>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="corm-control" placeholder="Last name" name="LastName" aria-lable="First name" />
+                    </div>
+                </div>
+                <!--Source From Bootstrap-->
+                <label>Please Enter Your Phone Number:</label>
+                <br>
+                <br>
+                <input type="text" id="PhoneNumber" name="PhoneNumber">
+                <br>
+                <br>
+                <label>Tip for maker</label><br />
+                <input type="text" name="Tips">
+                <br>
+                <br>
+
+                <input type="Submit" value="Submit Your Order" style="font-size:x-large" />
+                </div>
+        </form>
+    </section>
+    
+
+</body>
+</html>
